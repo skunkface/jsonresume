@@ -55,7 +55,7 @@ function buildGeneral(general) {
   resumeHolder.appendChild(emailHolder);
   elemBuilder('p', general.phone, resumeHolder);
   resumeHolder.appendChild(profilesHolder);
-  elemBuilder('p', general.summary, resumeHolder)
+  elemBuilder('p', general.summary, resumeHolder);
   docBody[0].appendChild(resumeHolder);
 }
 
