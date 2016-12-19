@@ -14,13 +14,13 @@
     },
     "profiles": [{
       "network": "github",
-      "iconClass": "fa fa-github",
+      "iconClass": "fa-github",
       "username": "skunkface",
       "url": "https://www.github.com/skunkface"
     },
     {
       "network": "linkedIn",
-      "iconClass": "",
+      "iconClass": "test",
       "username": "chrismiller4402",
       "url": "https://www.linkedin.com/in/chrismiller4402"
     }]
