@@ -29,7 +29,7 @@ function buildSocialProfile(profile) {
 }
 
 function buildGeneral(general) {
-  var docBody = document.getElementsByTagName('body');
+  var docBody = document.getElementById('resume-holder');
   var resumeHolder = document.createElement('section');
   resumeHolder.id = 'general';
 
@@ -55,12 +55,12 @@ function buildGeneral(general) {
   resumeHolder.appendChild(emailHolder);
   elemBuilder('p', general.phone, resumeHolder);
   resumeHolder.appendChild(profilesHolder);
-  elemBuilder('p', general.summary, resumeHolder)
-  docBody[0].appendChild(resumeHolder);
+  elemBuilder('p', general.summary, resumeHolder);
+  docBody.appendChild(resumeHolder);
 }
 
 function buildWork(work) {
-  var docBody = document.getElementsByTagName('body');
+  var docBody = document.getElementById('resume-holder');
   var workContainer = document.createElement('section');
   workContainer.id = 'work';
   for (var job in work ) {
@@ -80,11 +80,11 @@ function buildWork(work) {
 
     workContainer.appendChild(workHolder);
   }
-  docBody[0].appendChild(workContainer);
+  docBody.appendChild(workContainer);
 }
 
 function buildEducation(education) {
-  var docBody = document.getElementsByTagName('Body');
+  var docBody = document.getElementById('resume-holder');
   var educationContainer = document.createElement('section');
   educationContainer.id = 'education';
   for (var school in education) {
@@ -103,5 +103,5 @@ function buildEducation(education) {
     educationHolder.appendChild(extraCarriculars);
     educationContainer.appendChild(educationHolder);
   }
-  docBody[0].appendChild(educationContainer);
+  docBody.appendChild(educationContainer);
 }
