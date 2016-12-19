@@ -1,4 +1,10 @@
+/*jshint esversion: 6 */
 function build () {
+  var docBody = document.getElementsByTagName('body');
+  var resumeContainer = document.createElement('section');
+  resumeContainer.id = "resume-holder";
+  console.log(resumeContainer);
+  docBody[0].appendChild(resumeContainer);
   init(function(resume) {
     buildGeneral(resume.general);
     buildWork(resume.work);
@@ -20,7 +26,7 @@ function elemBuilder(tag, content, dest="none") {
 function linkBuilder(href, content='0', dest='0') {
   var tempLink = document.createElement('a');
   if (!content) {
-    tempLink.innerHTML = content;  
+    tempLink.innerHTML = content;
   }
   tempLink.href = href;
   if (!dest) {
