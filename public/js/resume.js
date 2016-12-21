@@ -32,7 +32,7 @@ function buildSocialProfile(profile) {
 function buildGeneral(general) {
   var docBody = document.getElementById('resume-holder');
   var resumeHolder = document.createElement('section');
-  resumeHolder.id = 'general';
+  resumeHolder.classList.add('general');
 
   var emailHolder = document.createElement('a');
   emailHolder.innerHTML = general.email;
@@ -63,10 +63,10 @@ function buildGeneral(general) {
 function buildWork(work) {
   var docBody = document.getElementById('resume-holder');
   var workContainer = document.createElement('section');
-  workContainer.id = 'work';
+  workContainer.classList.add('work');
   for (var job in work ) {
     var workHolder = document.createElement('article');
-    workHolder.classList = 'job';
+    workHolder.classList.add('job');
 
     elemBuilder('h2', work[job].company, workHolder);
     elemBuilder('h3', work[job].position, workHolder);
@@ -87,7 +87,7 @@ function buildWork(work) {
 function buildEducation(education) {
   var docBody = document.getElementById('resume-holder');
   var educationContainer = document.createElement('section');
-  educationContainer.id = 'education';
+  educationContainer.classList.add('education');
   for (var school in education) {
     var educationHolder = document.createElement('article');
     educationHolder.classList.add('school');
