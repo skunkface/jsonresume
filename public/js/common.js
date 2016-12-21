@@ -3,7 +3,6 @@ function build () {
   var docBody = document.getElementsByTagName('body');
   var resumeContainer = document.createElement('section');
   resumeContainer.id = "resume-holder";
-  console.log(resumeContainer);
   docBody[0].appendChild(resumeContainer);
   init(function(resume) {
     buildGeneral(resume.general);

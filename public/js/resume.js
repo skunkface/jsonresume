@@ -19,7 +19,8 @@ function init(callback) {
 function buildSocialProfile(profile) {
   var tempProfile = document.createElement('div');
   var icon = document.createElement('i');
-  icon.classList += profile.iconClass;
+  icon.classList.add('fa');
+  icon.classList.add(profile.iconClass);
   icon.setAttribute('aria-hidden', true);
   linkContent = elemBuilder('span', profile.url.slice(12));
   var link = linkBuilder(profile.url);
@@ -38,11 +39,11 @@ function buildGeneral(general) {
   emailHolder.href = 'mailto:' + general.email;
 
   var locationHolder = document.createElement('article');
-  locationHolder.classList = 'location';
+  locationHolder.classList.add('location');
   var myLocation = general.location;
 
   var profilesHolder = document.createElement('article');
-  profilesHolder.classList = 'profiles';
+  profilesHolder.classList.add('profiles');
   var myProfiles = general.profiles;
   for (var network in myProfiles) {
     profilesHolder.appendChild(buildSocialProfile(myProfiles[network]));
@@ -89,7 +90,7 @@ function buildEducation(education) {
   educationContainer.id = 'education';
   for (var school in education) {
     var educationHolder = document.createElement('article');
-    educationHolder.classList = 'school';
+    educationHolder.classList.add('school');
     var extraCarriculars = document.createElement('ul');
 
     var extras = education[school].extraCarriculars;
