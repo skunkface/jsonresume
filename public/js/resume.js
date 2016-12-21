@@ -19,7 +19,8 @@ function init(callback) {
 function buildSocialProfile(profile) {
   var tempProfile = document.createElement('div');
   var icon = document.createElement('i');
-  icon.classList += profile.iconClass;
+  icon.classList.add('fa');
+  icon.classList.add(profile.iconClass);
   icon.setAttribute('aria-hidden', true);
   linkContent = elemBuilder('span', profile.url.slice(12));
   var link = linkBuilder(profile.url);
@@ -29,20 +30,20 @@ function buildSocialProfile(profile) {
 }
 
 function buildGeneral(general) {
-  var docBody = document.getElementsByTagName('body');
+  var docBody = document.getElementById('resume-holder');
   var resumeHolder = document.createElement('section');
-  resumeHolder.id = 'general';
+  resumeHolder.classList.add('general');
 
   var emailHolder = document.createElement('a');
   emailHolder.innerHTML = general.email;
   emailHolder.href = 'mailto:' + general.email;
 
   var locationHolder = document.createElement('article');
-  locationHolder.classList = 'location';
+  locationHolder.classList.add('location');
   var myLocation = general.location;
 
   var profilesHolder = document.createElement('article');
-  profilesHolder.classList = 'profiles';
+  profilesHolder.classList.add('profiles');
   var myProfiles = general.profiles;
   for (var network in myProfiles) {
     profilesHolder.appendChild(buildSocialProfile(myProfiles[network]));
@@ -55,17 +56,17 @@ function buildGeneral(general) {
   resumeHolder.appendChild(emailHolder);
   elemBuilder('p', general.phone, resumeHolder);
   resumeHolder.appendChild(profilesHolder);
-  elemBuilder('p', general.summary, resumeHolder)
-  docBody[0].appendChild(resumeHolder);
+  elemBuilder('p', general.summary, resumeHolder);
+  docBody.appendChild(resumeHolder);
 }
 
 function buildWork(work) {
-  var docBody = document.getElementsByTagName('body');
+  var docBody = document.getElementById('resume-holder');
   var workContainer = document.createElement('section');
-  workContainer.id = 'work';
+  workContainer.classList.add('work');
   for (var job in work ) {
     var workHolder = document.createElement('article');
-    workHolder.classList = 'job';
+    workHolder.classList.add('job');
 
     elemBuilder('h2', work[job].company, workHolder);
     elemBuilder('h3', work[job].position, workHolder);
@@ -80,16 +81,16 @@ function buildWork(work) {
 
     workContainer.appendChild(workHolder);
   }
-  docBody[0].appendChild(workContainer);
+  docBody.appendChild(workContainer);
 }
 
 function buildEducation(education) {
-  var docBody = document.getElementsByTagName('Body');
+  var docBody = document.getElementById('resume-holder');
   var educationContainer = document.createElement('section');
-  educationContainer.id = 'education';
+  educationContainer.classList.add('education');
   for (var school in education) {
     var educationHolder = document.createElement('article');
-    educationHolder.classList = 'school';
+    educationHolder.classList.add('school');
     var extraCarriculars = document.createElement('ul');
 
     var extras = education[school].extraCarriculars;
@@ -103,5 +104,5 @@ function buildEducation(education) {
     educationHolder.appendChild(extraCarriculars);
     educationContainer.appendChild(educationHolder);
   }
-  docBody[0].appendChild(educationContainer);
+  docBody.appendChild(educationContainer);
 }

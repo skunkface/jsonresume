@@ -3,7 +3,7 @@ function buildStyleChange() {
   var styleChange = document.createElement('section');
   buttonBuilder('default.css', 'default', styleChange);
   buttonBuilder('compact.css', 'compact', styleChange);
-  styleChange.id = 'style-change';
+  styleChange.classList.add('style-change');
   docBody[0].appendChild(styleChange);
   styleChange.addEventListener('click', buttonEL, false);
 }

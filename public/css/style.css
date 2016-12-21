@@ -1,4 +1,14 @@
-#style-change {
+/** {
+  margin: 0;
+  padding: 0;
+}*/
+
+.resume-holder {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.style-change {
   position: fixed;
   top: 0;
   right: 0;

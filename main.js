@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
 
   var options = {
     root: __dirname + '/public',
-  }
+  };
 
   res.sendFide('index.html', options);
 
@@ -17,7 +17,7 @@ app.get('/resume', function (req, res) {
 
   var options = {
     root: __dirname + '/public',
-  }
+  };
 
   res.sendFile('resume.html', options);
 
