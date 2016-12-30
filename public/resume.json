@@ -20,7 +20,7 @@
     },
     {
       "network": "linkedIn",
-      "iconClass": "test",
+      "iconClass": "fa-linkedin",
       "username": "chrismiller4402",
       "url": "https://www.linkedin.com/in/chrismiller4402"
     }]
@@ -30,7 +30,7 @@
     "location": "Austin, TX",
     "position": "Front End Web Developer",
     "website": "https://www.erincondren.com",
-    "startDate": "2015-11",
+    "startDate": "November 2015",
     "endDate": "Present",
     "summary": "",
     "highlights": [
@@ -45,8 +45,8 @@
     "location": "Sun Valley, ID",
     "position": "Web Design Intern",
     "website": "https://www.sunvalley.com",
-    "startDate": "2013-7",
-    "endDate": "2013-9",
+    "startDate": "July 2013",
+    "endDate": "September 2013",
     "summary": "",
     "highlights": [
       "promotional images",
@@ -58,8 +58,8 @@
     "school": "The College of Idaho",
     "degree": "History",
     "degreeType": "Bachelor of Arts",
-    "startDate": "2009-9",
-    "endDate": "2015-5",
+    "startDate": "September 2009",
+    "endDate": "May 2015",
     "extraCarriculars": [
       "Kappa Sigma Fraternity",
       "Associated Student Body Senate",
@@ -72,8 +72,8 @@
     "school": "University of Idaho",
     "degree": "Design",
     "degreeType": "",
-    "startDate": "2013-1",
-    "endDate": "2014-5",
+    "startDate": "January 2013",
+    "endDate": "May 2014",
     "extraCarriculars": [
       "Kappa Sigma Fraternity Vice President"
     ]

@@ -3,13 +3,33 @@
   padding: 0;
 }*/
 
+html {
+  font-size: 1em;
+  font-family: 'Open sans', sans-serif;
+}
+
 .resume-holder {
   width: 1200px;
   margin: 0 auto;
+}
+
+.resume-holder section * {
+  margin: 0;
+}
+
+.profiles a {
+  display: block;
 }
 
 .style-change {
   position: fixed;
   top: 0;
   right: 0;
+}
+
+@media (max-width: 1200px) {
+  .resume-holder {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
