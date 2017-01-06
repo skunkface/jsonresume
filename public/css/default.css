@@ -1,17 +1,13 @@
 body {
-  background-color: pink;
+  background-color: #646067;
 }
 
-h1, h2, h3, h4, .resume-holder > section:before {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-}
 
 .resume-holder section {
   font-size: 1em;
   margin: 1.2em auto;
   background-color: #f8f8ff;
-  border: 1px solid gray;
+  border: 2px solid #7F857B;
   padding: 2em 1.8em;
   border-radius: .35em;
   -webkit-box-sizing: border-box;
@@ -25,33 +21,33 @@ h1, h2, h3, h4, .resume-holder > section:before {
 .resume-holder > section:before {
   font-size: 1.8em;
 }
-section.work:before {
+.work:before {
   content: 'Work Experience';
 }
 
-section.education:before {
+.education:before {
   content: 'Education';
 }
 
-.resume-holder section h1 {
+h1 {
   font-size: 2.074em;
  }
 
-.resume-holder section h2 {
+h2 {
   font-size: 1.728em;
   margin-bottom: .35em;
  }
 
-.resume-holder section h3 {
+h3 {
   font-size: 1.44em;
  }
 
-.resume-holder section h4 {
+h4 {
   font-size: 1.2em;
   margin-bottom: .2em;
  }
 
-.resume-holder section p {
+p {
    font-size: 1em;
    line-height: 1.15em;
  }
