@@ -39,6 +39,7 @@ section.education:before {
 
 .resume-holder section h2 {
   font-size: 1.728em;
+  margin-bottom: .35em;
  }
 
 .resume-holder section h3 {
@@ -47,6 +48,7 @@ section.education:before {
 
 .resume-holder section h4 {
   font-size: 1.2em;
+  margin-bottom: .2em;
  }
 
 .resume-holder section p {

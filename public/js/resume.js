@@ -56,11 +56,15 @@ function buildGeneral(general) {
     profilesHolder.appendChild(buildSocialProfile(myProfiles[network]));
   }
 
+  var descriptionHolder = document.createElement('article');
+  descriptionHolder.classList.add('description');
+  elemBuilder('p', general.summary, descriptionHolder);
+
   elemBuilder('h1', general.name, generalHolder);
   generalHolder.appendChild(locationHolder);
   generalHolder.appendChild(contactHolder);
   generalHolder.appendChild(profilesHolder);
-  elemBuilder('p', general.summary, generalHolder);
+  generalHolder.appendChild(descriptionHolder);
   docBody.appendChild(generalHolder);
 }
 
