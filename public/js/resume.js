@@ -31,8 +31,8 @@ function buildSocialProfile(profile) {
 
 function buildGeneral(general) {
   var docBody = document.getElementById('resume-holder');
-  var resumeHolder = document.createElement('section');
-  resumeHolder.classList.add('general');
+  var generalHolder = document.createElement('section');
+  generalHolder.classList.add('general');
 
   var emailHolder = document.createElement('a');
   emailHolder.innerHTML = general.email;
@@ -41,6 +41,13 @@ function buildGeneral(general) {
   var locationHolder = document.createElement('article');
   locationHolder.classList.add('location');
   var myLocation = general.location;
+  elemBuilder('p', myLocation.address, locationHolder);
+  elemBuilder('p', myLocation.city + ', ' + myLocation.postalCode, locationHolder);
+
+  var contactHolder = document.createElement('article');
+  contactHolder.classList.add('contact');
+  contactHolder.appendChild(emailHolder);
+  elemBuilder('p', general.phone, contactHolder);
 
   var profilesHolder = document.createElement('article');
   profilesHolder.classList.add('profiles');
@@ -49,15 +56,16 @@ function buildGeneral(general) {
     profilesHolder.appendChild(buildSocialProfile(myProfiles[network]));
   }
 
-  elemBuilder('h1', general.name, resumeHolder);
-  elemBuilder('p', myLocation.address, locationHolder);
-  elemBuilder('p', myLocation.city + ', ' + myLocation.postalCode, locationHolder);
-  resumeHolder.appendChild(locationHolder);
-  resumeHolder.appendChild(emailHolder);
-  elemBuilder('p', general.phone, resumeHolder);
-  resumeHolder.appendChild(profilesHolder);
-  elemBuilder('p', general.summary, resumeHolder);
-  docBody.appendChild(resumeHolder);
+  var descriptionHolder = document.createElement('article');
+  descriptionHolder.classList.add('description');
+  elemBuilder('p', general.summary, descriptionHolder);
+
+  elemBuilder('h1', general.name, generalHolder);
+  generalHolder.appendChild(locationHolder);
+  generalHolder.appendChild(contactHolder);
+  generalHolder.appendChild(profilesHolder);
+  generalHolder.appendChild(descriptionHolder);
+  docBody.appendChild(generalHolder);
 }
 
 function buildWork(work) {
@@ -99,7 +107,7 @@ function buildEducation(education) {
     }
 
     elemBuilder('h2', education[school].school, educationHolder);
-    elemBuilder('h5', education[school].degreeType + ' ' + education[school].degree, educationHolder);
+    elemBuilder('h4', education[school].degreeType + ' ' + education[school].degree, educationHolder);
     elemBuilder('p', education[school].startDate + " -- " + education[school].endDate, educationHolder);
     educationHolder.appendChild(extraCarriculars);
     educationContainer.appendChild(educationHolder);
