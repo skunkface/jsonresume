@@ -13,23 +13,23 @@ function build () {
   });
 }
 
-function elemBuilder(tag, content, dest="none") {
+function elemBuilder(tag, content, dest) {
   var tempElem = document.createElement(tag);
   tempElem.innerHTML = content;
-  if (dest != "none") {
+  if (typeof dest !== 'undefined') {
     dest.appendChild(tempElem);
   } else {
     return tempElem;
   }
 }
 
-function linkBuilder(href, content='0', dest='0') {
+function linkBuilder(href, content, dest) {
   var tempLink = document.createElement('a');
-  if (!content) {
+  if (typeof content !== 'undefined') {
     tempLink.innerHTML = content;
   }
   tempLink.href = href;
-  if (!dest) {
+  if (typeof dest !== 'undefined') {
     dest.appendChild(tempLink);
   } else {
     return tempLink;
