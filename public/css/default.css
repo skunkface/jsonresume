@@ -2,7 +2,6 @@ body {
   background-color: #646067;
 }
 
-
 .resume-holder section {
   font-size: 1em;
   margin: 1.2em auto;
@@ -16,7 +15,7 @@ body {
 }
 
 .resume-holder section article {
-  margin: .9em;
+  margin: .9em 1em;
 }
 .resume-holder > section:before {
   font-size: 1.8em;
@@ -40,6 +39,7 @@ h2 {
 
 h3 {
   font-size: 1.44em;
+  margin-bottom: .2em;
  }
 
 h4 {
@@ -47,10 +47,23 @@ h4 {
   margin-bottom: .2em;
  }
 
-p {
-   font-size: 1em;
-   line-height: 1.15em;
+ h6 {
+   font-size: 1.05em;
  }
+
+p {
+   line-height: 1.15em;
+   margin: .75em 0;
+ }
+
+ul {
+  margin: .05em
+}
+
+li:before {
+  content: '-';
+  margin: 0 .3em;
+}
 
 
 @media screen and (min-width: 1400px) {

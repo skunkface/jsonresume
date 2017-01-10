@@ -78,12 +78,14 @@ function buildWork(work) {
 
     elemBuilder('h2', work[job].company, workHolder);
     elemBuilder('h3', work[job].position, workHolder);
-    elemBuilder('p', work[job].startDate + " -- " + work[job].endDate, workHolder);
+    elemBuilder('h6', work[job].startDate + " -- " + work[job].endDate, workHolder);
+
+    elemBuilder('p', work[job].summary, workHolder);
 
     var workHighlights = work[job].highlights;
-    var highlightHolder = document.createElement('div');
+    var highlightHolder = document.createElement('ul');
     for (var highlight in workHighlights) {
-      elemBuilder('p', workHighlights[highlight], highlightHolder);
+      elemBuilder('li', workHighlights[highlight], highlightHolder);
     }
     workHolder.appendChild(highlightHolder);
 
