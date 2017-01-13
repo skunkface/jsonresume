@@ -7,7 +7,7 @@ body {
   margin: 1.2em auto;
   background-color: #f8f8ff;
   border: 2px solid #7F857B;
-  padding: 2em 1.8em;
+  padding: 1.2em .8em;
   border-radius: .35em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
 }
 
 .resume-holder section article {
-  margin: .9em 1em;
+  margin: .4em .5em;
 }
 .resume-holder > section:before {
   font-size: 1.8em;
@@ -75,5 +75,13 @@ li:before {
 @media screen and (min-width: 400px) {
   html {
     font-size: 1.05em;
+  }
+
+  .resume-holder section {
+    padding: 2em 1.8em;
+  }
+
+  .resume-holder section article {
+    margin: .9em 1em;
   }
 }
