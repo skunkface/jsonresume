@@ -1,3 +1,21 @@
 body {
-  background-color: green;
+  background-color: #f8f8ff;
+}
+
+.resume-holder section > article {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+article.location,
+article.description {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+
+.resume-holder section {
+  clear: both;
 }
