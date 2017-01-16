@@ -1,21 +1,65 @@
 body {
+  background-color: #ffffff;
+}
+
+.resume-holder > section {
+  margin: 1.2em 0;
+  border: 1px solid #D8BAFF;
   background-color: #f8f8ff;
+  padding: 1em;
+  border-radius: .35em;
 }
 
-.resume-holder section > article {
+section > article {
   display: inline-block;
-  width: 50%;
-  float: left;
+  width: 100%;
+  vertical-align: text-top;
+  padding: .3em 0;
 }
 
-article.location,
-article.description {
+.location,
+.description {
   display: block;
   width: 100%;
-  clear: both;
 }
 
+h1 {
+  font-size: 2em;
+}
 
-.resume-holder section {
-  clear: both;
+h2 {
+  font-size: 1.7em;
+  margin-bottom: .25em;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-bottom: .15em;
+}
+
+h4 {
+  font-size: 1.15em;
+  margin-bottom: .15em;
+}
+
+h6 {
+  font-size: 1.05em;
+}
+
+p {
+  line-height: 1.4;
+  margin: .6em 0;
+}
+
+ .location > p {
+   margin: 0;
+ }
+
+@media screen and (min-width: 768px) {
+  section > article {
+    display: inline-block;
+    width: 47.5%;
+    margin: 0 1.25%;
+    vertical-align: text-top;
+  }
 }
