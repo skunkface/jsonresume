@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Resume Website</title>
-</head>
-<body>
-  <h2>resume builder</h2>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <a href="/resume">view resume</a>
+    <meta name="description" content="My Personal website">
+    <meta name="author" content="Chris Miller">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
 
-</body>
+    <title>Chris Miller. Development.</title>
+    <style>
+      body { font-family: 'Open-sans', sans-serif; color: dimgrey; background: black;}
+      h1,h2 { font-family: 'Raleway', sans-serif;}
+      ul { list-style: none; }
+      .infoHolder { width: 45%; margin-left: 2.5%;}
+      a {color: #e6e6e6; text-decoration: none; border-bottom: 1px solid dimgrey;}
+      a:hover { color: #e6e6e6; text-decoration: none; border-bottom: 2px solid #e6e6e6;}
+      #splash {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+    </style>
+
+  </head>
+
+  <body id="splash">
+    <div class="">
+      <div class="">
+        <div class="infoHolder">
+          <h1>hello.</h1>
+          <p>My name is Chris Miller. </p>
+          <h1>about me.</h1>
+          <!-- <p>Having graduated from the <a href="https://collegeofidaho.edu">College of Idaho</a> this spring, I have been released into the world, free to explore and further develop my skills. While exploring the ever evolving world of design, I have become enthralled with the idea of Responsive design. In a world where so many people are accessing the internet on so many devices, everyone should have a wonderful user experience, regardless of their device.</p> -->
+          <p>The internet is a vast, unending, and bountiful resource available to everyone; because of this I strive to bring a usable and enjoyable experience to all users, regardless of thier chosen device and browser. By exploring the world of web development and enhancing my skills as a web developer, I strive to write code that is easy to use and provides a much needed service to all users.</p>
+          <h1>current projects.</h1>
+          <p>Front End Web Development for <a href="https://www.erincondren.com">Erin Condren</a></p>
+          <ul>
+            <li><a href="https://www.erincondren.com/faq">frequently asked questions page</a></li>
+            <li><a href="https://www.erincondren.com/staples">staples store list</a></li>
+            <li><a href="https://www.erincondren.com/ec-in-the-press">ec press page</a></li>
+          </ul>
+          <h1>links.</h1>
+          <a href="/resume">Resume</a><br />
+          <a class="link" href="https://github.com/skunkface">github.com/skunkface</a><br />
+          <a class="link" href="https://linkedin.com/in/chrismiller4402">linkedin.com/in/chrismiller4402</a><br />
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $(window).resize(function(){
+          if($(this).width() >= 767){
+            $.backstretch("https://cloud.githubusercontent.com/assets/11128164/14942609/4744c7c4-0f87-11e6-96cb-efa34778d397.jpg", {centeredX: false, centeredY: false});
+          }
+        })
+        .resize();//trigger resize on page load
+      });
+    </script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
