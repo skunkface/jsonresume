@@ -18,9 +18,14 @@ section > article {
 }
 
 .location,
-.description {
+.description,
+.skills {
   display: block;
   width: 100%;
+}
+
+.skills article {
+  margin: 0 .5em;
 }
 
 h1 {
@@ -53,6 +58,15 @@ p {
 
  .location > p {
    margin: 0;
+ }
+
+ a {
+   color: #7F857B;
+   text-decoration: none;
+ }
+
+ a:hover {
+   color: #333;
  }
 
 @media screen and (min-width: 768px) {

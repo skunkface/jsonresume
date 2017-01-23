@@ -39,7 +39,28 @@ h1, h2, h3, h4, h6, .resume-holder > section:before {
 }
 
 .profiles a {
-  display: block;
+  display: inline;
+}
+
+.profiles a:after {
+	content: "\A";
+  white-space: pre;
+}
+
+i {
+  margin-right: .2em;
+}
+
+.fa-star {
+	color: #d2c26d;
+}
+
+.fa-star-o {
+	color: #333;
+}
+
+.skills article {
+	display: inline-block;
 }
 
 .style-change {
