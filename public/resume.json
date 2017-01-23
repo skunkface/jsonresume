@@ -23,6 +23,38 @@
       "iconClass": "fa-linkedin",
       "username": "chrismiller4402",
       "url": "https://www.linkedin.com/in/chrismiller4402"
+    }],
+    "skills": [{
+      "name": "HTML",
+      "level": 5
+    },
+    {
+      "name": "CSS",
+      "level": 4
+    },
+    {
+      "name": "JavaScript",
+      "level": 4
+    },
+    {
+      "name": "node.js",
+      "level": 2
+    },
+    {
+      "name": "AngularJS",
+      "level": 2
+    },
+    {
+      "name": "UNIX Shell",
+      "level": 3
+    },
+    {
+      "name": "git",
+      "level": 3
+    },
+    {
+      "name": "mySQL",
+      "level": 2
     }]
   },
   "work": [{

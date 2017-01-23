@@ -29,6 +29,28 @@ function buildSocialProfile(profile) {
   return link;
 }
 
+function skillBuilder(skill) {
+  var tempSkill = document.createElement('article');
+  var skillLevel = document.createElement('div');
+  skillLevel.classList.add('skillLevel');
+  elemBuilder('p', skill.name, tempSkill);
+  for (var i = 0; i < skill.level; i++) {
+    var tempStar = document.createElement('i');
+    tempStar.classList.add('fa');
+    tempStar.classList.add('fa-star');
+    skillLevel.appendChild(tempStar);
+  }
+  var blankStars = 5 - skill.level;
+  for (var j = 0; j < blankStars; j++) {
+    var tempBlankStar = document.createElement('i');
+    tempBlankStar.classList.add('fa');
+    tempBlankStar.classList.add('fa-star-o');
+    skillLevel.appendChild(tempBlankStar);
+  }
+  tempSkill.appendChild(skillLevel);
+  return tempSkill;
+}
+
 function buildGeneral(general) {
   var docBody = document.getElementById('resume-holder');
   var generalHolder = document.createElement('section');
@@ -60,11 +82,20 @@ function buildGeneral(general) {
   descriptionHolder.classList.add('description');
   elemBuilder('p', general.summary, descriptionHolder);
 
+  var skillsHolder = document.createElement('article');
+  skillsHolder.classList.add('skills');
+  var skillsList = general.skills;
+  for (var skill in skillsList) {
+    skillsHolder.appendChild(skillBuilder(skillsList[skill]));
+    console.log(skillsList[skill].name,skillsList[skill].level);
+  }
+
   elemBuilder('h1', general.name, generalHolder);
   generalHolder.appendChild(locationHolder);
   generalHolder.appendChild(contactHolder);
   generalHolder.appendChild(profilesHolder);
   generalHolder.appendChild(descriptionHolder);
+  generalHolder.appendChild(skillsHolder);
   docBody.appendChild(generalHolder);
 }
 

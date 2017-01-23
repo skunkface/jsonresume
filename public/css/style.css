@@ -51,6 +51,18 @@ i {
   margin-right: .2em;
 }
 
+.fa-star {
+	color: #d2c26d;
+}
+
+.fa-star-o {
+	color: #333;
+}
+
+.skills article {
+	display: inline-block;
+}
+
 .style-change {
   position: fixed;
   top: 0;
