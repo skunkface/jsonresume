@@ -4,7 +4,7 @@
     "email" : "chris.miller4402@me.com",
     "phone" : "206-819-5283",
     "website": "http://skunkface.github.io/",
-    "summary": "As a quick learner, I have the ability to easily adapt to my surroundings. I have experience in Graphic Design for both web and print as well as Web Development work, focusing on HTML, CSS, PHP, JavaScript, and JQuery. Recently I have been learning AngularJS and Laravel to go along with project asset management using npm and Bower as well as Git. To go along with this I also have extensive knowledge of Adobe Photoshop and Illustrator. I have an intense desire to learn, always striving to expand and develop my abilities. I graduated from the College of Idaho with a History degree; while this might seem like an unrelated field, I feel it has given me a unique view of how the small parts work together to form the final polished product. Understanding the connections between the small unseen pieces is something that I try to incorporate into every part of my life. The future is an unending wealth of knowledge, I look forward to discovering its treasures.",
+    "summary": "Web developer with the ability to easily adapt to my surroundings. Experienced in building responsive web pages, as well as dynamic web pages built from JSON files allowing for quick and easy updates. Possesses a strong passion for learning and applying new ideas and techniques coupled with an insatiable thirst for knowledge, there is no obstacle in the universe that can not be overcome. Fascinated by outer space and the unseen wonders it contains.",
     "location": {
       "address": "11916 N Humphreys Way",
       "postalCode": "ID 83714",
@@ -32,7 +32,7 @@
     "website": "https://www.erincondren.com",
     "startDate": "November 2015",
     "endDate": "Present",
-    "summary": "Main duties included building, maintaining, and updating product landing pages, as well as various informational pages. Additional responsiblities indluded: building and scheduling semiweekly updates to our website storefront; various site CSS fixes, and assisting other teams with any website related projects. ",
+    "summary": "Main duties included building, maintaining, and updating product landing pages, as well as various informational pages. Additional responsiblities included: building and scheduling semiweekly updates to our website storefront; various site CSS fixes, and assisting other teams with any website related projects.",
     "highlights": [
       "<a href='https://www.erincondren.com/faq' target='_blank'>faq page</a> - Built a faq page for customer use as well as internal use",
       "<a href='https://www.erincondren.com/staples' target='_blank'>staples store list</a> - a listing of staples stores that carry our products",
@@ -49,9 +49,9 @@
     "endDate": "September 2013",
     "summary": "Various graphic design and web development projects, also designed web and print ad campaigns. Primarily used Adobe Photoshop and Illustrator, some work with JavaScript and CSS.",
     "highlights": [
-      "promotional images",
-      "image galleries",
-      "national ad campaigns"
+      "designed promotional images for use around the resort ",
+      "golf course image galleries web page",
+      "national advertising campaigns featured in USA Today."
     ]
   }],
   "education": [{
