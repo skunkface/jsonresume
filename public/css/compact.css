@@ -55,6 +55,15 @@ p {
    margin: 0;
  }
 
+ a {
+   color: #7F857B;
+   text-decoration: none;
+ }
+
+ a:hover {
+   color: #333;
+ }
+
 @media screen and (min-width: 768px) {
   section > article {
     display: inline-block;
