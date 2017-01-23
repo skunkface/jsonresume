@@ -18,9 +18,14 @@ section > article {
 }
 
 .location,
-.description {
+.description,
+.skills {
   display: block;
   width: 100%;
+}
+
+.skills article {
+  margin: 0 .5em;
 }
 
 h1 {

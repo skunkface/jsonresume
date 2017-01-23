@@ -13,9 +13,20 @@ body {
 .resume-holder section article {
   margin: .4em .5em;
 }
+
 .resume-holder > section:before {
   font-size: 1.8em;
 }
+
+article.skills > article {
+  margin: .3em;
+}
+
+.skills:before {
+  content: 'Skills';
+  display: block;
+}
+
 .work:before {
   content: 'Work Experience';
 }
@@ -102,6 +113,12 @@ a:hover {
 
   .resume-holder section article {
     margin: .9em 1em;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  article.skills > article {
+    margin: .4em .5em;
   }
 }
 
