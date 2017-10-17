@@ -113,13 +113,14 @@ function buildWork(work) {
 
     elemBuilder('p', work[job].summary, workHolder);
 
-    var workHighlights = work[job].highlights;
-    var highlightHolder = document.createElement('ul');
-    for (var highlight in workHighlights) {
-      elemBuilder('li', workHighlights[highlight], highlightHolder);
+    if (work[job].highlights.length != 0) {
+      var workHighlights = work[job].highlights;
+      var highlightHolder = document.createElement('ul');
+      for (var highlight in workHighlights) {
+        elemBuilder('li', workHighlights[highlight], highlightHolder);
+      }
+      workHolder.appendChild(highlightHolder);
     }
-    workHolder.appendChild(highlightHolder);
-
     workContainer.appendChild(workHolder);
   }
   docBody.appendChild(workContainer);
