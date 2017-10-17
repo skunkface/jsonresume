@@ -58,12 +58,32 @@
     }]
   },
   "work": [{
+    "company": "Cherrydale Farms",
+    "Location": "Philadelphia, PA (Boise remote)",
+    "position": "Frontend Developer Contractor",
+    "website": "https://www.cherrydale.com",
+    "startDate": "July 2017",
+    "endDate": "August 2017",
+    "summary": "Working as a contractor, I built various webpages to assist in meeting their site launch deadline. My responsibilities included building webpages from Sketch mockups while insuring their responsive design.",
+    "highlights": []
+  },
+  {
+    "company": "Franz Witte Landscape Contracting",
+    "location": "Boise, ID",
+    "position": "Nursery Worker",
+    "website": "http://www.franzwitte.com",
+    "startDate": "March 2017",
+    "endDate": "Present",
+    "summary": "",
+    "highlights": []
+  },
+  {
     "company": "Erin Condren LLC",
     "location": "Austin, TX",
     "position": "Front End Web Developer",
     "website": "https://www.erincondren.com",
     "startDate": "November 2015",
-    "endDate": "Present",
+    "endDate": "January 2017",
     "summary": "Main duties included building, maintaining, and updating product landing pages, as well as various informational pages. Additional responsiblities included: building and scheduling semiweekly updates to our website storefront; various site CSS fixes, and assisting other teams with any website related projects.",
     "highlights": [
       "<a href='https://www.erincondren.com/faq' target='_blank'>faq page</a> - Built a faq page for customer use as well as internal use",
