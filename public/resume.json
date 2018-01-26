@@ -6,8 +6,8 @@
     "website": "http://skunkface.github.io/",
     "summary": "Web developer with the ability to easily adapt to my surroundings. Experienced in building responsive web pages, as well as dynamic web pages built from JSON files allowing for quick and easy updates. Possesses a strong passion for learning and applying new ideas and techniques coupled with an insatiable thirst for knowledge, there is no obstacle in the universe that can not be overcome. Fascinated by outer space and the unseen wonders it contains.",
     "location": {
-      "address": "11916 N Humphreys Way",
-      "postalCode": "ID 83714",
+      "address": "4820 W Kootenai St",
+      "postalCode": "ID 83705",
       "city": "Boise",
       "countryCode": "US",
       "state": "Idaho"
@@ -80,7 +80,7 @@
   {
     "company": "Erin Condren LLC",
     "location": "Austin, TX",
-    "position": "Front End Web Developer",
+    "position": "Frontend Web Developer",
     "website": "https://www.erincondren.com",
     "startDate": "November 2015",
     "endDate": "January 2017",
