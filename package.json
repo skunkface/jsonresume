@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "phantomjs": "^2.1.7"
   }
 }

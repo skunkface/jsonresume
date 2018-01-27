@@ -11,6 +11,13 @@ function build () {
     buildEducation(resume.education);
     buildStyleChange();
   });
+  return resumeContainer;
+  console.log(resumeContainer);
+}
+
+function printToPdf() {
+    var resumeContent = build();
+    console.log(resumeContent);
 }
 
 function elemBuilder(tag, content, dest) {
@@ -42,3 +49,5 @@ function buttonBuilder(value, content, dest) {
   tempBttn.value = value;
   dest.appendChild(tempBttn);
 }
+
+printToPdf();

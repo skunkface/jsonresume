@@ -87,7 +87,6 @@ function buildGeneral(general) {
   var skillsList = general.skills;
   for (var skill in skillsList) {
     skillsHolder.appendChild(skillBuilder(skillsList[skill]));
-    console.log(skillsList[skill].name,skillsList[skill].level);
   }
 
   elemBuilder('h1', general.name, generalHolder);
